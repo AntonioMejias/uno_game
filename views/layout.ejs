@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="UnoGame">
   <head>
     <title>New Sails App</title>
 
@@ -29,6 +29,8 @@
     -->
 
     <!--STYLES-->
+    <link rel="stylesheet" href="/styles/angular-material.min.css">
+    <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
   </head>
 
@@ -59,6 +61,7 @@
     -->
 
     <!--TEMPLATES-->
+    
     <!--TEMPLATES END-->
 
 
@@ -84,16 +87,30 @@
           + Use a different preprocessor, like TypeScript
 
     -->
-      <script src="lib/angular/angular.js"></script>
-      <script src="lib/angular/angular-route.js"></script>
-      <script src="js/angular/app.js"></script>
-      <script src="js/angular/services/services.js"></script>
-      <script src="js/angular/controllers/controllers.js"></script>
-      <!--<script src="js/filters.js"></script>-->
-      <!--<script src="js/directives.js"></script>-->
+    <!-- SCRIPTS DE ANGULAR Y SUS MODULOS-->
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular/angular-route.js"></script>
+        <script src="lib/angular/angular-animate.min.js"></script>
+        <script src="lib/angular/angular-aria.min.js"></script>
+        <script src="lib/angular/angular-messages.min.js"></script>
+        <script src="lib/angular/angular-material.min.js"></script>
+    <!--END-->
+
+    <!-- SCRIPTS DE LA APLICACIÓN-->
+
+        <script src="js/angular/app.js"></script>
+        <script src="js/angular/services/services.js"></script>
+        <script src="js/angular/controllers/controllers.js"></script>
+        <!--<script src="js/filters.js"></script>-->
+        <!--<script src="js/directives.js"></script>-->
+    <!--END-->
 
 
     <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/angular/app.js"></script>
+    <script src="/js/angular/controllers/controller.js"></script>
+    <script src="/js/angular/services/services.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>

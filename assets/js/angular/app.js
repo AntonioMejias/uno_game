@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('UnoGame',['ngMaterial','ngRoute'])
+angular.module('UnoGame',['ngMaterial','ngRoute','ngMdIcons', 'ngMessages'])
 		
 .config(['$routeProvider', function($routeProvider) {
 
@@ -9,10 +9,10 @@ angular.module('UnoGame',['ngMaterial','ngRoute'])
   	.when('/view1', 
   		{templateUrl: 'angular-views/p.html'})
 
-  	.when('/home', 
+  	.when('/', 
   		{templateUrl: 'angular-views/home.html'});
 
-  $routeProvider.otherwise({redirectTo: '/home'});
+  $routeProvider.otherwise({redirectTo: '/'});
 
 
 

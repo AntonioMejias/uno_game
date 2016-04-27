@@ -1,0 +1,23 @@
+.button-red{
+	background: #EF4949 !important;
+	color:white !important;
+	font-weight: bold;
+}
+
+.space-rigth {
+	margin-right: 10px;
+}
+.space-rigth {
+	margin-left: 2px;
+}
+
+.black-icon {
+	color: black;
+}
+
+.fondo {
+	background: url('../images/fondo.jpg');
+    background-position: initial;
+    background-size: cover;
+    overflow-y: hidden;
+}

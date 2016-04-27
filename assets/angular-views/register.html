@@ -1,0 +1,73 @@
+
+<div layout="row" style="background: #E82F2F" layout-fill layout-align="center center">
+
+        
+        <md-content  class="md-whiteframe-8dp" layout-padding  flex="35" flex-sm="50" flex-xs="70" class="md-no-momentum" layout-padding>
+           <center><h1>Registrate</h1></center>
+            <form action="" name="registerForm">
+                <md-input-container class=" md-block" >
+                    <md-icon md-font-set="material-icons" > people </md-icon>
+                    <label>Username *</label>
+                    <input ng-model="user.clientName" name="clientName" ng-required="true" type="text">
+
+                    <div ng-messages="registerForm.clientName.$error">
+                        <div ng-message="required">El Nombre de usuario es obligatorio.</div>
+                    </div>
+
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>Email * </label>
+                    <md-icon md-font-set="material-icons"> email </md-icon>
+                    <input ng-model="user.email" name="clientEmail" ng-pattern="/^.+@.+\..+$/" ng-required="true">
+
+                    <div ng-messages="registerForm.clientEmail.$error">
+                        <div ng-message="required">El Email es obligatorio.</div>
+                        <div ng-message="pattern">Email Invalido.</div>
+                    </div>
+
+                </md-input-container>
+
+                <md-input-container class="md-block">
+                    <label>Password *</label>
+                    <md-icon md-font-set="material-icons">lock</md-icon>
+                    <input ng-model="user.password" name="clientPassword" type="password" ng-required="true">
+
+                    <div ng-messages="registerForm.clientPassword.$error">
+                        <div ng-message="required">Debe Ingresar una contraseña.</div>
+                    </div>
+
+                </md-input-container>
+
+                <md-input-container class="md-block" >
+                    <label>Celular</label>
+                    <md-icon md-font-set="material-icons">smartphone </md-icon>
+                    <input ng-model="user.phone" type="text">
+
+                </md-input-container>
+
+               <!-- <md-datepicker ng-model="user.submissionDate" md-placeholder="Fecha Nacimiento"> </md-datepicker>-->
+ 
+                <md-radio-group ng-model="user.sexo" layout="row">
+                        <div layout="row" class="space-rigth">
+                            <md-icon md-font-set="material-icons" class="space-rigth black-icon space-left">wc</md-icon>
+                            <span> Sexo: </span>
+                        </div>
+                        
+                        
+                        <md-radio-button value="Masculino" > Masculino </md-radio-button>
+                        <md-radio-button  value="Femenino" > Femenino </md-radio-button>
+                    
+                </md-radio-group>
+
+                <div layout="row"  layout-margin layout-align="center center">
+                   <md-button class="md-raised button-red">Registrate</md-button>
+                </div>
+
+
+
+            </form>
+
+            <center><a href="/#/">¿Ya tienes cuenta? Ingresa</a> </center>
+        </md-content>
+
+</div>

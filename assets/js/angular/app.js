@@ -9,6 +9,9 @@ angular.module('UnoGame',['ngMaterial','ngRoute','ngMdIcons', 'ngMessages'])
   	.when('/view1', 
   		{templateUrl: 'angular-views/p.html'})
 
+  	.when('/register', 
+  		{templateUrl: 'angular-views/register.html'})
+
   	.when('/', 
   		{templateUrl: 'angular-views/home.html'});
 

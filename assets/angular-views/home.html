@@ -1,67 +1,13 @@
+<div style="background: #E82F2F" layout="row"class="fondo"  layout-fill layout-align="center center">
 
-<div layout="row" style="background: #CE4040" layout-fill layout-align="center center">
-
-        
-        <md-content  class="md-whiteframe-8dp" layout-padding  flex="35" flex-sm="50" flex-xs="70" class="md-no-momentum" layout-padding>
-           <center><h1>Registrate</h1></center>
-            <form action="" name="registerForm">
-                <md-input-container class=" md-block" >
-                    <md-icon md-font-set="material-icons" > people </md-icon>
-                    <label>Username *</label>
-                    <input ng-model="user.clientName" name="clientName" ng-required="true" type="text">
-
-                    <div ng-messages="registerForm.clientName.$error">
-                        <div ng-message="required">El Nombre de usuario es obligatorio.</div>
-                    </div>
-
-                </md-input-container>
-                <md-input-container class="md-block">
-                    <label>Email * </label>
-                    <md-icon md-font-set="material-icons"> email </md-icon>
-                    <input ng-model="user.email" name="clientEmail" ng-pattern="/^.+@.+\..+$/" ng-required="true">
-
-                    <div ng-messages="registerForm.clientEmail.$error">
-                        <div ng-message="required">El Email es obligatorio.</div>
-                        <div ng-message="pattern">Email Invalido.</div>
-                    </div>
-
-                </md-input-container>
-
-                <md-input-container class="md-block">
-                    <label>Password *</label>
-                    <md-icon md-font-set="material-icons">lock</md-icon>
-                    <input ng-model="user.password" name="clientPassword" type="password" ng-required="true">
-
-                    <div ng-messages="registerForm.clientPassword.$error">
-                        <div ng-message="required">Debe Ingresar una contraseña.</div>
-                    </div>
-
-                </md-input-container>
-
-                <md-input-container class="md-block" >
-                    <label>Celular</label>
-                    <md-icon md-font-set="material-icons">smartphone </md-icon>
-                    <input ng-model="user.phone" type="text">
-
-                </md-input-container>
-
-               <!-- <md-datepicker ng-model="user.submissionDate" md-placeholder="Fecha Nacimiento"> </md-datepicker>-->
-
-                <md-input-container class="md-block">
-                    <label>Sexo </label>
-                    <md-icon md-font-set="material-icons">wc</md-icon>
-                    <input ng-model="user.sexo" name="clientSexo">
-
-                </md-input-container>
-
-
-
-            </form>
-        </md-content>
-
-</div>
-<!--<ul>
+<!--<center><h1>¡Bienvenido a UNO GAME !</h1></center>
+            
+<ul>
     <li><a href="/#/view1/">Prueba1</a></li>
-    <li><a href="/#/view2/">Prueba2</a></li>
+    <li><a href="/#/register/">Registrate</a></li>
     
 </ul>-->
+
+<img  src="../images/uno_logo.png" alt="">
+
+</div>
